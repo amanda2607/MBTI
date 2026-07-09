@@ -10,12 +10,12 @@
  */
 const MBTI = {
   meta: {
-    title: 'MBTI 体系 · 深度学习与交叉验证工具',
-    subtitle: '基于 Briggs–Myers 官方框架与荣格心理类型 · 学习 / 自测 / 交叉验证 / 分析他人',
+    title: '心理类型研习 · 16型人格自测与交叉验证',
+    subtitle: '基于荣格心理类型与类型动力学 · 个人学习 / 自测 / 交叉验证 / 分析他人',
     disclaimer:
-      '本工具为教育用途。MBTI® 与 Myers-Briggs Type Indicator® 为 The Myers-Briggs Company 商标；' +
-      '正式测评题（Form M / Step II™）受版权保护，本应用题目为依官方构念自编，不构成认证测评。' +
-      '类型无优劣之分，仅描述心理偏好。',
+      '本工具仅供个人学习与研究使用，非商业、非官方、非认证测评。题目依心理类型理论的四个维度构念自编。' +
+      'MBTI® 与 Myers-Briggs Type Indicator® 为 The Myers-Briggs Company 商标；正式测评题（Form M / Step II™）受版权保护，本应用不构成官方产品。' +
+      '本工具不用于任何人才评估或招聘决策。类型无优劣之分，仅描述心理偏好。',
     sources: [
       'Myers, I.B. & Myers, P.B. 《Gifts Differing》(1980)',
       'The Myers-Briggs Company 官方框架（四维度定义与类型动力学功能栈）',
@@ -785,8 +785,8 @@ const MBTI = {
         '它反映四个维度上"胜方票差"的平均占比，越高表示倾向越清晰。若置信度偏低，说明你在该维度上内外倾向接近，' +
         '应结合行为印证、重测或考虑相近类型，而不要当成定论。官方 MBTI® 用近 100 题 + 清晰度指数（如 0/30/60）做同样的事——题多，正是为了稳。' },
       { h: '版权与局限声明', p:
-        'MBTI® / Myers-Briggs Type Indicator® 为 The Myers-Briggs Company 商标。正式题目（Form M / Step II™）' +
-        '受法律保护，本应用题目为依官方构念自编的教育内容，Route B 为推导演练，均非认证测评。' }
+        '本工具仅供个人学习与研究使用，非商业、非官方、非认证测评。MBTI® / Myers-Briggs Type Indicator® 为 The Myers-Briggs Company 商标；' +
+        '正式题目（Form M / Step II™）受版权保护，本应用题目为依心理类型理论构念自编，不构成官方产品，亦不用于任何人才评估或招聘决策。' }
     ]
   }
 };

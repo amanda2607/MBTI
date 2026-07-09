@@ -367,7 +367,7 @@
     $('#cross-b').innerHTML = `<div class="card center">
       <h2>Route B · 功能态度量表</h2>
       <p>32 题，探测你更自然使用的认知功能（Si/Se/Ni/Ne/Ti/Te/Fi/Fe）与态度。</p>
-      <p class="note">本量表为基于类型动力学的推导演练，用于与 Route A 交叉验证，非官方计分。</p>
+      <p class="note">本量表为基于类型动力学的推导演练，用于与 Route A 交叉验证，仅供个人学习参考，非官方计分。</p>
       <button class="btn primary" data-action="cross-startB">开始 Route B</button></div>`;
   }
   function renderCrossB() {
