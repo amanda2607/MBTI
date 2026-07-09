@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MBTI 体系 · 深度学习与交叉验证工具</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="top">
+    <div class="brand">
+      <div class="brand-t" id="brand-t">MBTI 体系</div>
+      <div class="brand-s" id="brand-s">深度学习 · 交叉验证 · 分析他人</div>
+    </div>
+    <nav class="tabs">
+      <button data-view="learn" class="active">学习中心</button>
+      <button data-view="assess">测评中心</button>
+      <button data-view="cross">交叉验证</button>
+      <button data-view="other">分析他人</button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- 学习中心 -->
+    <section id="view-learn" class="view active">
+      <div class="learn-nav">
+        <button data-sec="origin" class="active">起源</button>
+        <button data-sec="dims">四维度</button>
+        <button data-sec="funcs">认知功能</button>
+        <button data-sec="dynamics">功能栈/动力学</button>
+        <button data-sec="types">16 型图谱</button>
+        <button data-sec="logic">方法学</button>
+        <button data-sec="quiz">自测检验卡</button>
+      </div>
+      <div id="learn-root"></div>
+    </section>
+
+    <!-- 测评中心 -->
+    <section id="view-assess" class="view">
+      <div id="assess-intro"></div>
+      <div id="assess-quiz"></div>
+      <div id="assess-result"></div>
+    </section>
+
+    <!-- 交叉验证 -->
+    <section id="view-cross" class="view">
+      <div id="cross-intro"></div>
+      <div id="cross-a"></div>
+      <div id="cross-b"></div>
+      <div id="cross-report"></div>
+    </section>
+
+    <!-- 分析他人 -->
+    <section id="view-other" class="view">
+      <div id="other-intro"></div>
+      <div id="other-quiz"></div>
+      <div id="other-guide"></div>
+      <div id="other-result"></div>
+    </section>
+  </main>
+
+  <!-- 类型弹层 -->
+  <div id="modal-mask" class="mask">
+    <div id="modal" class="modal-box"></div>
+  </div>
+
+  <footer class="foot">
+    <p id="foot-note">MBTI® / Myers-Briggs Type Indicator® 为 The Myers-Briggs Company 商标。本工具为教育用途，题目依官方构念自编、非认证测评。</p>
+    <p class="src" id="foot-src"></p>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+  <script>
+    document.getElementById('brand-t').textContent = MBTI.meta.title;
+    document.getElementById('brand-s').textContent = MBTI.meta.subtitle;
+    document.getElementById('foot-note').textContent = MBTI.meta.disclaimer;
+    document.getElementById('foot-src').textContent = '参考来源：' + MBTI.meta.sources.join('｜');
+  </script>
+</body>
+</html>
